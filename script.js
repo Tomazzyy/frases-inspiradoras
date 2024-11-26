@@ -42,15 +42,14 @@ const frases = [
     "Hoje é um ótimo dia para fazer algo incrível."
   ];
   
-  const fraseElement = document.getElementById('frase');
-  const botao = document.getElementById('gerar-frase');
+ const fraseElement = document.getElementById('frase');
+ const botao = document.getElementById('gerar-frase');
   
-  // Função para gerar a frase aleatória
   function gerarFrase() {
     const indiceAleatorio = Math.floor(Math.random() * frases.length);
     fraseElement.textContent = frases[indiceAleatorio];
   }
   
-  // Adicionar o evento de clique ao botão
   botao.addEventListener('click', gerarFrase);
+  
   
